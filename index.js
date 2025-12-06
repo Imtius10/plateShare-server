@@ -5,8 +5,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const app = express();
 const port = process.env.PORT || 3000;
 
-const uri =
-    "mongodb+srv://plateShareAdmin:3XgKqB0k1J61YdkI@cluster0.p9dmq2f.mongodb.net/?appName=Cluster0";
+const uri =`mongodb+srv://${process.env.VITE_NAME}:${process.env.VITE_PASS}@cluster0.p9dmq2f.mongodb.net/?appName=Cluster0`;
 
 const client = new MongoClient(uri, {
     serverApi: { version: ServerApiVersion.v1, strict: true, deprecationErrors: true },

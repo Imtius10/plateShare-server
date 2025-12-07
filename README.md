@@ -109,19 +109,6 @@ GET /requests/food/:foodId
 
 PATCH /requests/:id
 
-🟢 Root API
 
-GET /
-Returns:
 
-Server is running
 
-📌 Notes
-
-Server keeps MongoDB connection alive
-
-JSON-based REST API
-
-Beginner-friendly structure
-
-Accepts all CORS requests

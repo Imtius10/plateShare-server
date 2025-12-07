@@ -17,7 +17,7 @@ app.use(express.json());
 
 async function run() {
     try {
-        await client.connect();
+       // await client.connect();
         const db = client.db("plateShare");
         const foodCollection = db.collection("foods");
         const requestCollection = db.collection("foodRequests");
